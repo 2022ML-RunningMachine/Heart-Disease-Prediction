@@ -29,7 +29,7 @@
 
 ### Manual
 
-위 파일을 다운로드하여 Colab Notebooks에서 엽니다. 파일 내 적혀있는 스크립트를 기반으로 위에서부터 순차적으로 셀 실행을 합니다. <br>
+`Model+HyperparamterTuning.ipynb`을 다운로드하여 Colab Notebooks에서 엽니다. 파일 내 적혀있는 스크립트를 기반으로 위에서부터 순차적으로 셀 실행을 합니다. <br>
 <br><br>
 
 ### 개발 환경
