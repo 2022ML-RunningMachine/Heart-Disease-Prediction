@@ -112,7 +112,7 @@ train data를 오버샘플링 하였기 때문에 `X_train → X_train_balanced`
 
 > Random Forest 
   - w/o SMOTE <br>
-  Default값으로 모델을 생성한 후 이를 교차 검증하여 평가합니다. 그리드 서치에 시간 소요가 커 랜덤 서치를 통해 하이퍼 파라미터 튜닝을 진행하고, 이를 기반으로 다시 훈련하여 그 시간을 측정합니다. <br>
+  Default값으로 모델을 생성한 후 이를 교차 검증하여 평가합니다. 그리드 서치에 시간 소요가 커 랜덤 서치(기준 F1 score)를 통해 하이퍼 파라미터 튜닝을 진행하고, 이를 기반으로 다시 훈련하여 그 시간을 측정합니다. <br>
   나온 결과로 **Best Model**을 구해 Validation Set을 사용하여 Accuracy, Precision, Recall, F1 score를 출력하고 Confusion Matrix를 확인합니다. <br><br>
 
   - w/ SMOTE <br>
@@ -131,9 +131,6 @@ train data를 오버샘플링 하였기 때문에 `X_train → X_train_balanced`
   튜닝된 모델이 디폴트 파라미터를 사용한 모델보다 성능이 나음을 볼 수 있습니다. 마찬가지로 Accuracy, Precision, Recall, F1 score를 출력하고 Confusion Matrix를 확인합니다.<br>
   <br><br>
 
-  - Test Model <br>
-  Test Dataset을 사용하여 최종 평가를 진행합니다. Accuracy, Precision, Recall, F1 score, 그리고 Confusion Matrix를 확인할 수 있습니다. <br>
-  <br><br>
 
 > XBG<br>
 
@@ -149,8 +146,6 @@ Random Forest 모델 평가를 위해 여러 가지 기법을 사용하고 시�
 - Precision, Recall, F1 score, Support <br>
 - Predicted Probability of Each Point <br>
 - ROC-AUC <br>
-- Average Heart Disease rate of Age 20's <br>
-- Team Member's Info Test <br>
 - Tree Visualization <br>
 <br><br>
 
