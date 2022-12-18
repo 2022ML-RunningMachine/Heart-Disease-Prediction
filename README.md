@@ -135,13 +135,14 @@ train data를 오버샘플링 하였기 때문에 `X_train → X_train_balanced`
 > XBG<br>
 
 다음과 같은 파라미터를 사용하여 모델을 훈련하고 검증합니다. <br> `max_depth = 20, n_estimators = 250, early_stopping_rounds = 50, eval_beric = 'auc', eval_set = [(X_val, y_val)]` <br>
-그리드 서치에 드는 시간을 단축시키기 위해 트리를 축소하고, 조기 중단값 역시 `30`으로 줄입니다. cv 값 역시 3 혹은 4 정도로 조절합니다. 기준은 똑같이 Accuracy와 F1 score를 사용합니다. 그리드 서치를 통해 하이퍼 파라미터 튜닝을 진행합니다.<br>
+그리드 서치에 드는 시간을 단축시키기 위해 트리를 축소하고, 조기 중단값 역시 `30`으로 줄입니다. cv 값 역시 4(혹은 3) 정도로 조절합니다. 기준은 똑같이 Accuracy와 F1 score를 사용합니다. 그리드 서치를 통해 하이퍼 파라미터 튜닝을 진행합니다.<br>
 나온 결과로 **Best Model**을 구해 Validation Set을 사용하여 Accuracy, Precision, Recall, F1 score, 그리고 Confusion Matrix를 확인합니다. <br>
 <br><br>
 
 ### Model Assessment
 
 Random Forest 모델 평가를 위해 여러 가지 기법을 사용하고 시각화를 진행하였습니다. 아래 내용을 확인할 수 있습니다. <br><br>
+- Baseline Models <br>
 - Confusion Matrix <br>
 - Precision, Recall, F1 score, Support <br>
 - Predicted Probability of Each Point <br>
